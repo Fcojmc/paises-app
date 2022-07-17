@@ -31,6 +31,15 @@ export class PorPaisComponent implements OnInit {
 
   }
 
+  onQueryRecieved(query: string): void {
+    this.termino = query;
+    this.buscar();
+  }
+
+  sugerencias( query: string): void {
+    this.error = false;
+    //Crear sugerencia;
+  }
 
   handleGetPaisResponse(res: CountryResponse[]): void {
     this.error = false;

@@ -7,6 +7,8 @@ import { PorPaisComponent } from './pages/por-pais/por-pais.component';
 import { PorRegionComponent } from './pages/por-region/por-region.component';
 import { DetallePaisComponent } from './pages/detalle-pais/detalle-pais.component';
 import { RouterModule } from '@angular/router';
+import { PaisesListComponent } from './components/paises-list/paises-list.component';
+import { PaisesInputComponent } from './components/paises-input/paises-input.component';
 
 
 
@@ -15,7 +17,9 @@ import { RouterModule } from '@angular/router';
     PorCapitalComponent,
     PorPaisComponent,
     PorRegionComponent,
-    DetallePaisComponent
+    DetallePaisComponent,
+    PaisesListComponent,
+    PaisesInputComponent
   ],
   imports: [
     CommonModule,
