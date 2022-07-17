@@ -4,7 +4,8 @@
 <div class="row">
     <div class="col">
         <app-paises-input (queryEmitter)="onQueryRecieved($event)"
-                          (onDebounce)="sugerencias($event)"></app-paises-input>
+                          (onDebounce)="sugerencias($event)"
+                          placeHolder = "Buscar país..."></app-paises-input>
     </div>
 </div>
 
