@@ -1,0 +1,22 @@
+<h2>Por País</h2>
+<hr>
+
+<div class="row">
+    <div class="col">
+        <app-paises-input (queryEmitter)="onQueryRecieved($event)"
+                          (onDebounce)="sugerencias($event)"></app-paises-input>
+    </div>
+</div>
+
+<hr>
+
+<div class="alert alert-danger" *ngIf="error">
+    <h4 class="alert-heading">Error {{codError}}</h4>
+    <p>No se encontró nada con el término <b>{{termino}}</b></p>
+</div>
+
+<div class="row" *ngIf="!error">
+    <div class="col">
+        <app-paises-list [paises]="paises"></app-paises-list>
+    </div>
+</div>
